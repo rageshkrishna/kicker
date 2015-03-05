@@ -8,8 +8,4 @@ install:
 script: 
   - true
 after_success:
-  - curl -i -H "Authorization: $apiToken" -X POST https://apibeta.shippable.com/builds/54e3d3188fbd5212009cafc8/deploy
-  - > curl -H "Authorization: apiToken $apiToken" \
-      -H "Content-Type: application/json" \
-      -d "{\"projectId\": \"$projectID\"}" \
-      https://apibeta.shippable.com/workflow/triggerBuild
+  - curl -H "Authorization: apiToken $apiToken" -H "Content-Type: application/json" -d "{\"projectId\": \"$projectID\"}" https://apibeta.shippable.com/workflow/triggerBuild
