@@ -1,7 +1,6 @@
 env:
   global:
     - projectID=54e80f5d91426fd6a78f6281
-    - secure: YhTIDERrR2UWvsi08bkcL0+nzaXw5+V2BwZnzKZzxARoSAuKYXki3WXdw0OWXcAO8Kt0IZa5kFOk80FayA+7TlwwZ9aVsBO6KNXXcWz5r63up1MO3RrI4tZucWIz39riaS+Ho8ezcc2fYhmhZGqbfpPmT7gD0/E0ljfFVPxZaaOn1TbqDRApsVbyW9V8+cybCFlUCciUx6EgyNtJIeDJo8stUtbyRtc6LVsLYp+uRZN62tVxNsylJt9C4ie5c7v7j0eAQ/cBuXqKALso5PS5v2lGyPeNjXqA2URD4o1h6jXNtt/T80LrFW+uDRvjacyBKZOhV9kBslvJdhGyF9ibZg==
 
 install:
   - true
