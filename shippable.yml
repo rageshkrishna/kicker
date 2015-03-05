@@ -1,15 +1,9 @@
 env:
   global:
     - projectID=54e80f5d91426fd6a78f6281
-    - secure: LDhdRmhkzblyDBvCP+491/djR53ws4VuKyTa0E92E7Y48dctovHWwDL7OV3t7cTcSJphOl/RuGveQ0NlyfKvMlyPHfxffnq1AkhGgIYdkTtri/qKmE3VWQSUSj4ZygBo1VJze61Y+EQoED3S1TOyQ98hL0YmwQtlr5Vtvc1eHyuuiN2HwoZq3HpR4iEsjWbmG/EfyS3/VTT8Aw2x4ReAl2bIjP4i+O4HF4wO71zrcgEuGraTFrZZ98TzmmWG8n4rYY63ObVHJ6ENbCVu0tQhvvuWXrsOhukEfKvcKrzuRUSLePv6TohQnxVdWspsdy/EQ2KH4M92BA4cfAhdmT97Sg==
+    - secure: YhTIDERrR2UWvsi08bkcL0+nzaXw5+V2BwZnzKZzxARoSAuKYXki3WXdw0OWXcAO8Kt0IZa5kFOk80FayA+7TlwwZ9aVsBO6KNXXcWz5r63up1MO3RrI4tZucWIz39riaS+Ho8ezcc2fYhmhZGqbfpPmT7gD0/E0ljfFVPxZaaOn1TbqDRApsVbyW9V8+cybCFlUCciUx6EgyNtJIeDJo8stUtbyRtc6LVsLYp+uRZN62tVxNsylJt9C4ie5c7v7j0eAQ/cBuXqKALso5PS5v2lGyPeNjXqA2URD4o1h6jXNtt/T80LrFW+uDRvjacyBKZOhV9kBslvJdhGyF9ibZg==
 
 install:
   - true
 script: 
   - true
-after_success:
-  - curl -i -H "Authorization: $apiToken" -X POST https://apibeta.shippable.com/builds/54e3d3188fbd5212009cafc8/deploy
-  - curl -H "Authorization: apiToken $apiToken" \
-                                     -H "Content-Type: application/json" \
-                                     -d "{\"projectId\": \"$projectID\"}" \
-                                     https://apibeta.shippable.com/workflow/triggerBuild
