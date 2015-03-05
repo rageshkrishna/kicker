@@ -1,3 +1,8 @@
+env:
+  global:
+    - projectID=54d0e07291426fd6a78cc090
+    - secure: Bonks+yGt2tu+63IvJe8wAD0nBypK7X9VGeQ4nTC9jrgdff7DzFyWozOn/Ghqgx0pLheQy+uaL07EnJ7C4ql81dMrCLDj/r70YbI8TrTXGFI2h2vHl34C1qjuwahHz5FR9/cbHn12eBOi010NiMHEgG0tMCRmrxfKz4B3+wTIHF7/x5lDIGr1no9WiATMV1GV2tjibKCItjn5Arrb8rOL5yrz9F1lAv3OTrpKTe7KnuxqzEkjcbNBwiIqNR3/34CsD0U/W6PaOdbTl1A1/I9E0wZa/lVQhoowo4HQwQiDuw0QMnL6Fu2tNGXS6oqh/+MFO2G3W4nUMN8+WRNFTEzDA==
+
 install: true
 script: true
 after_success:
